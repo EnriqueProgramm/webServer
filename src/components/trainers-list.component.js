@@ -8,7 +8,7 @@ const Trainer = props => (
     <td>{props.trainer.trainerSpeciality}</td>
     <td>{props.trainer.yearsOfExperience}</td>    
     <td>
-        <Link to={"/edittrainer/"+props.trainer._id}>edit</Link> | <a href='#' onClick={() => {props.deleteTrainer(props.trainer._id)}}>delete</a>
+        <Link to={"/edittrainer/"+props.trainer._id}>edit</Link> | <a href='click' onClick={() => {props.deleteTrainer(props.trainer._id)}}>delete</a>
     </td>
     </tr>
 
