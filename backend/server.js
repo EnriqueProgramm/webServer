@@ -28,6 +28,13 @@ app.use('/trainers', trainersRouter)
 app.use('/exercises', exercisesRouter); 
 app.use('/users', usersRouter);
 
+let port = process.env.PORT;
+if(port == null || port == ""){
+    port = 5000;
+}
+
+app.listen(port);
+
 app.listen(port, () =>{
  console.log( `server is running on port: ${port}` );
 });
